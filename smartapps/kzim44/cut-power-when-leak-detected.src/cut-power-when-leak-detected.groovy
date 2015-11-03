@@ -25,10 +25,10 @@ definition(
 
 
 preferences {
-    section("Turn on when leak detected:") {
-        input "theleak", "capability.waterSensor", required: true, title: "Where?"
+    section("When a leak is detected:") {
+        input "theleak", "capability.waterSensor", required: true, title: "Which?"
     }
-    section("Turn on this light") {
+    section("Turn off this switch") {
         input "theswitch", "capability.switch", required: true
     }
 }
